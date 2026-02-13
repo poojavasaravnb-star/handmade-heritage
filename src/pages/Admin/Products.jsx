@@ -269,7 +269,7 @@ function AddProduct() {
             value={product.quantity}
             placeholder="Quantity"
             onChange={handleChange}
-            min={0}
+            min="0"
           />
 
           <textarea
