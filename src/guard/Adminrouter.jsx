@@ -5,7 +5,7 @@ import AdminNavbar from "../pages/Admin/AdminNavbar";
 const Adminrouter = () => {
   const admin = JSON.parse(localStorage.getItem("admin"));
 
-  // Not logged in OR wrong admin
+  // Only admin@gmail.com allowed
   if (!admin || admin.email !== "admin@gmail.com") {
     return <Navigate to="/login-page" replace />;
   }
