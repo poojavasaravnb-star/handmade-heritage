@@ -1,0 +1,44 @@
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #222;
+    color: #fff;
+  }
+  
+  .admin-navbar button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .admin-body {
+    display: flex;
+  }
+  
+  .admin-sidebar {
+    width: 200px;
+    min-height: 100vh;
+    background: #333;
+    padding: 20px;
+  }
+  
+  .admin-sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .admin-sidebar a.active {
+    font-weight: bold;
+    color: yellow;
+  }
+  
+  .admin-content {
+    padding: 30px;
+    width: 100%;
+  }
+  

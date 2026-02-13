@@ -1,0 +1,33 @@
+.success-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.success-container h1 {
+  color: #2ecc71;
+  margin-bottom: 15px;
+}
+
+.success-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.success-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success-btn:hover {
+  background: #6f4528;
+}

@@ -1,0 +1,125 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #c97b36, #1f6f78);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo-text:hover {
+  transform: scale(1.05);
+}
+
+/* ===== DASHBOARD PAGE ===== */
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 50px 30px;
+  font-family: "Poppins", sans-serif;
+
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+
+/* ===== TITLE ===== */
+.dashboard-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 45px;
+
+  background: linear-gradient(90deg, #6dd5ed, #2193b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 1px;
+}
+
+
+/* ===== CARDS GRID ===== */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+
+/* ===== SINGLE CARD ===== */
+.dashboard-card {
+  padding: 30px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.4),
+    inset 0 0 25px rgba(255, 255, 255, 0.05);
+
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+
+/* ===== CARD HOVER ===== */
+.dashboard-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.55),
+    inset 0 0 35px rgba(255, 255, 255, 0.08);
+}
+
+
+/* ===== CARD TITLE ===== */
+.card-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 12px;
+}
+
+
+/* ===== CARD VALUE ===== */
+.card-value {
+  font-size: 34px;
+  font-weight: 700;
+
+  background: linear-gradient(90deg, #6dd5ed, #2193b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ===== OPTIONAL ICON STYLE ===== */
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #6dd5ed;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .dashboard-title {
+    font-size: 26px;
+  }
+
+  .dashboard-card {
+    padding: 22px;
+  }
+
+  .card-value {
+    font-size: 26px;
+  }
+}

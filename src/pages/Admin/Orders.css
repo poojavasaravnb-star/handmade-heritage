@@ -1,0 +1,97 @@
+.admin-orders {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f2f6f9;
+}
+
+.admin-orders h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+/* Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ⭐ Header Color → Navbar Match */
+.orders-table th {
+  background: linear-gradient(90deg, #5fa8c5, #3d8fb0);
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+}
+
+/* Body */
+.orders-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #eef2f7;
+  color: #374151;
+}
+
+/* Hover */
+.orders-table tr:hover {
+  background: #f0f9ff;
+  transition: 0.3s;
+}
+
+/* Address Layout */
+/* Address Layout */
+.address-cell {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.main-address {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.sub-address {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 3px;
+}
+
+/* Status Buttons */
+.status-btn {
+  border: none;
+  padding: 6px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Pending */
+.status-btn.pending {
+  background: #fde68a;
+  color: #92400e;
+}
+
+/* Delivered */
+.status-btn.delivered {
+  background: #86efac;
+  color: #065f46;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}

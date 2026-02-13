@@ -1,0 +1,236 @@
+/* ===== Main Container ===== */
+.add-product-container {
+  min-height: 100vh;
+  padding: 45px;
+  background: linear-gradient(135deg, #e6f0f2, #d4e6ea);
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+}
+
+/* ===== Header ===== */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.list-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ===== Add Button ===== */
+.add-new-btn {
+  background: linear-gradient(135deg, #0f2027, #367083, #203a43);
+  border: none;
+  padding: 12px 22px;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.add-new-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== Table ===== */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Table Header */
+.product-table th {
+  background: linear-gradient(90deg, #5fa8c5, #3d8fb0);
+  padding: 16px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
+/* Table Data */
+.product-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* Alternate row color */
+.product-table tbody tr:nth-child(even) {
+  background: #f7fbfc;
+}
+
+/* Hover */
+.product-table tbody tr:hover {
+  background: #eef6f8;
+  transition: 0.3s;
+  transform: scale(1.01);
+}
+
+/* ===== Table Image ===== */
+.table-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== Action Buttons ===== */
+.product-table button {
+  border: none;
+  padding: 7px 14px;
+  margin: 4px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Edit */
+.product-table button:first-child {
+  background: #367083;
+  color: white;
+}
+
+/* Delete */
+.product-table button:last-child {
+  background: #e74c3c;
+  color: white;
+}
+
+.product-table button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ===== Form Container ===== */
+.add-product-form {
+  max-width: 480px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.add-product-form h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ===== Inputs ===== */
+.add-product-form input,
+.add-product-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  background: white;
+  transition: 0.3s;
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+  border-color: #367083;
+  box-shadow: 0 0 8px rgba(54,112,131,0.3);
+}
+
+/* ===== Dropdown ===== */
+.add-product-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-product-form select option {
+  background: white;
+  color: black;
+}
+
+/* ===== Preview Image ===== */
+.preview-image {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* ===== Submit Button ===== */
+.add-product-form button[type="submit"] {
+  background: linear-gradient(135deg, #0f2027, #367083, #203a43);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-product-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== Cancel Button ===== */
+.add-product-form button[type="button"] {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-product-form button[type="button"]:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .add-product-container {
+    padding: 20px;
+  }
+
+  .product-table {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,100 @@
+.footer {
+background: linear-gradient(135deg, #cf9e9e, #97c8d8, #9dd3eb);
+
+  padding: 50px 30px;
+  border-top: 1px solid #e5e5e5;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+/* Titles */
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #3a3a3a;
+}
+
+/* Text */
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #444;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c49b63;
+}
+
+/* Contact */
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 50%;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #c49b63;
+  color: white;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 20px;
+  }
+}

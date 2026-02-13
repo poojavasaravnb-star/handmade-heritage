@@ -1,0 +1,89 @@
+.admin-contact {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f2f6f9;
+}
+
+.admin-contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+/* Table */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.contact-table th {
+  background: linear-gradient(90deg, #5fa8c5, #3d8fb0);
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+}
+
+/* Body */
+.contact-table td {
+  padding: 16px;
+  border-bottom: 1px solid #eef2f7;
+  color: #374151;
+  text-align: center;
+}
+
+/* Hover */
+.contact-table tr:hover {
+  background: #f0f9ff;
+  transition: 0.3s;
+}
+
+/* User Name */
+.user-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Message Layout */
+.message-cell {
+  text-align: left;
+  max-width: 300px;
+  line-height: 1.4;
+}
+
+/* Date */
+.date-cell {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-table {
+    font-size: 13px;
+  }
+
+  .message-cell {
+    max-width: 200px;
+  }
+}

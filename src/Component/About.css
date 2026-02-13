@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+
+.about-wrapper {
+  /* Header na gradient sathe match karva mate soft color */
+  background-color: #f8fafc; 
+  color: #334155;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background: white;
+  padding-bottom: 60px;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 500px; /* Header na banner size mujab */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-intro-text {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+.est-tag {
+  color: #64748b;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.title-serif {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  color: #1e293b;
+  margin: 15px 0;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+/* Experience Section */
+.experience-box {
+  padding: 100px 10%;
+  background-color: #f1f5f9; /* Soft Grey */
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.serif-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #0f172a;
+}
+
+.accent-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #7dd3fc, #f9a8d4); /* Header match gradient */
+  margin: 20px 0;
+}
+
+.side-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards Section */
+.mission-vision {
+  padding: 80px 10%;
+  background: white;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.mv-card {
+  padding: 40px;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s;
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.highlighted {
+  background: #f8fafc;
+  border-left: 5px solid #7dd3fc;
+}
+
+.mv-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+/* Team Section */
+.team-section {
+  padding: 100px 10%;
+  background: white;
+}
+
+.team-flex {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.team-photo {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.shop-button {
+  background: #0f172a;
+  color: white;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .container-flex, .team-flex, .mv-grid {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .accent-line { margin: 20px auto; }
+  .title-serif { font-size: 2.5rem; }
+}

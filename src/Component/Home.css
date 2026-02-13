@@ -1,0 +1,151 @@
+.home {
+  font-family: "Playfair Display", serif;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 4rem;
+}
+
+.hero-overlay p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.hero-overlay button {
+  padding: 12px 30px;
+  background: #a14c2c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* SHOP CATEGORY */
+.shop-category {
+  padding: 70px 8%;
+}
+
+.shop-category h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.category-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.category-slider {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.category-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+.category-card {
+  min-width: 280px;
+  height: 360px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 14px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  z-index: 2;
+  width: 45px;
+  height: 45px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #faf7f3;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
