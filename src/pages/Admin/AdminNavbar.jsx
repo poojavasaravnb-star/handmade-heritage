@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import "./adminNavbar.css";
+import "./adminnavbar.css";
 
 const AdminNavbar = () => {
   const navigate = useNavigate();
@@ -11,9 +11,7 @@ const AdminNavbar = () => {
 
   return (
     <nav className="nav">
-      <div className="logo-text">
-  Handmade Heritage
-</div>
+      <div className="logo-text">Handmade Heritage</div>
 
       <ul className="menu">
         <li>
